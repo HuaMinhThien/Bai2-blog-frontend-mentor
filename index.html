@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Figtree">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 16px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .card{
+      width: 375px;
+      height: auto;
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 20px;
+      margin: 100px auto;
+      box-shadow: 10px 10px 0 #000;
+      transition: transform 1s ease-in-out;
+      perspective: 1000px;
+    }   
+
+    .card:hover{
+      animation: card-flip 1s ease-in-out forwards;
+      transform: rotateY(180deg);
+    }
+
+    @keyframes card-flip {
+      0%{box-shadow: 10px 10px 0 #000}
+      20%{box-shadow: 0px 0px 0 #000;}
+      50%{box-shadow: 0px 0px 0 #000; background-color: hsl(47, 100%, 70%); }
+      100%{box-shadow: -10px 10px 0px #000; background-color: hsl(47,100%, 70%);}
+
+    }
+
+    .sec1{
+      width: 335px;
+      margin: 20px;
+      border-radius: 20px;
+    }
+
+    .sec1>img{
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+
+    }
+
+    .sec2{
+      background-color: hsl(47, 88%, 63%);
+      width: 100px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 0 20px;
+      border-radius: 10px;
+    }
+    .sec2>p{
+      font-size: 18px;
+      font-weight: bold;
+
+    }
+    .sec2:hover{
+      background-color: #000;
+      color: hsl(47, 88%, 63%);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .sec3>p{
+      margin: 20px 0 0 20px;
+      font-size: 18px;
+    }
+  
+    .sec4>h1{
+      margin: 20px 0 0 20px;
+      font-size: 25px;
+    }
+    .sec4>h1:hover{
+      color: hsl(47, 88%, 63%);
+    }
+
+    .sec5>p{
+      margin: 20px 0 0 20px;
+      color: #696969;
+      font-size: 18px;
+    }
+
+    .sec6{
+      margin: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .avatar{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .avatar>img{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .name>p{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body style="background-color: hsl(47, 88%, 63%);">
+
+  Learning
+
+  Published 21 Dec 2023
+
+  HTML & CSS foundations
+
+  These languages are the backbone of every website, defining structure, content, and presentation.
+
+  Greg Hooper
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.facebook.com/minh.thien.460014/">Hứa Minh Thiện</a>.
+  </div>
+
+  <div class="card">
+    <div class="sec1">
+      <img src="assets/images/illustration-article.svg" alt="">
+    </div>
+    <div class="sec2">
+      <p>Learning</p>
+    </div>
+    <div class="sec3">
+      <p>Published 21 Dec 2023</p>
+    </div>
+    <div class="sec4">
+      <h1> HTML & CSS foundations</h1>
+    </div>
+    <div class="sec5">
+      <p>These languages are the backbone of every website, defning structure, content, and presention.</p>
+    </div>
+    <div class="sec6">
+      <div class="avatar">
+        <img src="assets/images/image-avatar.webp" alt="">
+      </div>
+
+      <div class="name">
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
